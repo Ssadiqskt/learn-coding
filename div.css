@@ -1,0 +1,16 @@
+body{
+   margin: 0%;
+}
+    
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto auto;
+}
+
+
+.videos{
+   display:grid;
+    height: 100vh;
+    grid-template-columns: auto auto
+}
