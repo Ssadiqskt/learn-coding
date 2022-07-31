@@ -8,14 +8,21 @@
 </head>
 <style>
 .box{
-    width: 70%;
+    width: 45%;
     height: 50vh;
     border: 5px;
     background-color: rgb(183, 180, 180);
+
 }
 
+table{
+    border: 2px solid black;
+}
 
-
+td{
+    border: 1px solid black;
+    margin: 3px;
+}
 
 
 
@@ -24,17 +31,16 @@
 
 <body>
     <div class="box" >
-    <form action="post"></form>
+    <form method="post" action="http://127.0.0.1:5500/done.html" ></form>
     <table>
         
-        <tr><td rowspan="8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30953.77855312036!2d78.12603390482815!3d14.123019211431306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb3cef4f144ae5d%3A0x358dec2a622ff177!2sKadiri%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1659113574377!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td></tr>
+        <tr id="R1"><td rowspan="8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30953.77855312036!2d78.12603390482815!3d14.123019211431306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb3cef4f144ae5d%3A0x358dec2a622ff177!2sKadiri%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1659113574377!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td></tr>
         <tr><td style="font-family: 'Times New Roman';"><i>Name:</i></td><td><input type="text" name="Full name" required></td></tr>
         <tr><td style="font-family: 'Times New Roman';"><i>Email:</i></td><td><input type="email" name="Email" required></td></tr>
         <tr><td style="font-family: 'Times New Roman';"><i>Mobile:</i></td><td><input type="number" name="mobile" required></td></tr>
         <tr><td style="font-family: 'Times New Roman';"><i>message:</i></td><td ><textarea name="message" id="message1" cols="30" rows="7"></textarea></td></tr>
-        <tr><td colspan="2"><input type="submit" name="submit" id="submit"></td></tr></div>
+        <tr><td colspan="2"><a href="http://127.0.0.1:5500/done.html"><input type="submit" name="submit" id="submit" ></a></td></tr></div>
         
-
 
 
 

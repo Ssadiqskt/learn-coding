@@ -10,7 +10,7 @@
   
   
   .header {
-    padding: 60px;
+    padding: 40px;
     text-align: center;
     background: rgb(124, 121, 121);
     color: white;
@@ -19,7 +19,7 @@
   
   .navbar {
     display: flex;
-    background-color: #333;
+    background-color: rgb(128, 33, 33);
   }
   
   
@@ -74,6 +74,8 @@
   @media screen and (max-width: 700px) {
     .row, .navbar {   
       flex-direction: column;
+      
     }
-  }
+ 
+ }
   
