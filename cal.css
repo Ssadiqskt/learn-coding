@@ -1,0 +1,59 @@
+body{
+    background-color: rgba(41, 30, 30, 0.652);
+    
+}
+
+
+
+.container{
+    background-color: rgba(207, 197, 197, 0.445);
+  
+    width: 400px; 
+
+    border: 2px solid black;
+    
+}
+    
+
+#display{
+    
+   
+    height: 70px;
+    
+    padding: 16px 8px;
+    /* font-size: 25px; */
+
+}
+.buttons{
+     display: grid;
+     border-bottom: 1px solid black;
+     border-left: 1px solid black;
+     grid-template-columns: auto auto auto auto;
+
+
+
+
+}
+    
+.buttons > div {
+    border-top: 1px solid black ;
+    border-right: 1px solid black ;
+}
+.click{
+    border: 0 5px solid black;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.click:hover{
+    background-color: black;
+    color: white;
+}
+      
+   
+
+
+
+
