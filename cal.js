@@ -1,14 +1,14 @@
-console.log("hello world")
+
   
 
 let display= document.getElementById('display');
 
 
-let buttons= document.getElementById('click');
+let buttons= Array.from( document.getElementById('click'));
 
 
 
-
+buttons.map
 
 
 
