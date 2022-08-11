@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+background-color: rgb(170, 167, 179);
+
+
+}
+
+.container{
+    max-width: 420px; 
+    margin: 35vh 85vh ; 
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+input{
+    padding: 10px;
+    background-color: rgb(20, 220, 153);
+    width: auto;
+    color: black;
+}
+
+
+</style>
+<!-- ----------java script------------- -->
+<script>
+    function validate (){
+
+const email = document.getElementById('email');
+const emailpattern =/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/;
+const pass = document.getElementById('pass');
+const passpattern =  /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+
+
+
+
+if (email.value.match(emailpattern)) {
+    document.getElementById("p1").innerHTML="*Verified email";
+    document.getElementById("p1").style.color ='green'
+    
+} else {
+    document.getElementById("p1").innerHTML="*Email not verified";
+    document.getElementById("p1").style.color = 'red'
+}
+
+if (pass.value.match(passpattern)) {
+    document.getElementById("p2").innerHTML="*Good password";
+    document.getElementById("p2").style.color = 'green'
+    
+} else {
+    document.getElementById("p2").innerHTML="*password should have atleast 1 uppercase 1 lowercase 1 number and 1 special charecter";
+    document.getElementById("p2").style.color = 'red'
+}
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+<body>
+    <div class="container">
+    <form > 
+        
+         <input type="text" id="email" placeholder="Enter Email"  value=""><br>
+         <span id="p1" style="color: #008000
+         ;"></span><br><br>
+          <input type="password" id="pass" placeholder="Enter Password" maxlength="8"  value=""><br>
+          <span id="p2"></span><br><br>
+          <button type="button" onclick="validate ()" >Submit</button>
+
+      
+
+
+
+
+    </form>
+</div>
+    
+</body>
+</html>
