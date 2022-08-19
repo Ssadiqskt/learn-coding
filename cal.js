@@ -8,11 +8,22 @@ let buttons= Array.from( document.getElementById('click'));
 
 
 
-buttons.map
+buttons.map( button => {
+    button.addEventListener('click', (e) => {
+        switch(e.target.innerText){
+            case 'C':
+                screen.innerText = '';
+                break;
+            case '=':
+                
+                    screen.innerText = eval(screen.innerText)
+
+                break;
+            default:
+                screen.innerText += e.target.innerText;
+        }
+    });
+});
 
 
 
-// line-height: 100px;
-
-
-// text-align: right;

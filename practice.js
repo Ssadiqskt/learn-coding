@@ -89,15 +89,31 @@ console.log(!false)
 
 
 
-let marks = {
-    harry: 55,
-    sid: 60,
-    sam: 65,
-    shaym:78,
+// let marks = {
+//     harry: 55,
+//     sid: 60,
+//     sam: 65,
+//     shaym:78,
     
-}
+// } 
 
 
-for(let i = 0; i<Object.keys(marks).length;i++){
-    console.log(Object.keys(marks)[i]+"="+marks[Object.keys(marks)[i]])
-}
+// for(let i = 0; i<Object.keys(marks).length;i++){
+//     console.log(Object.keys(marks)[i]+"="+marks[Object.keys(marks)[i]])
+// }
+//  names = [
+//     "sadiq",
+//     "saqeeb",
+//     "shyam",
+//     "ram" ,
+//     "hulk"
+
+// ]
+//  for(let i = "hulk"; i!= Object.keys(names);i++){
+//     console.log(Object.keys(names)[i])
+// }
+
+const cars = ["Saab", "Volvo", "BMW"];
+let m = cars[2];
+console.log(m)
+;
