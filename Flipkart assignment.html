@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flipkart</title>
      <!------Bootstrap css------------->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.css" rel="stylesheet">
      <!------Bootstrap js------------->
@@ -15,6 +15,159 @@
        </script>
 </head>
 <body>
-    <div class="bg-primary"><img src="/main1.JPG" alt="logo"></div>
+  <div id="nv1" class="container-fluid"></div>
+    <nav class="navbar navbar-expand bg-primary navbar-dark">
+        <div class="container-fluid">
+        <img src="/fliplogo.JPG" alt="flipkart" class="img-fluid rounded " style="height: 65px;"></div>
+        <div class="container-fluid justify-content-end">
+            
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#" data-bs-toggle="modal" data-bs-target="#mylogin">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#" data-bs-toggle="modal" data-bs-target="#mysignup">SIGNUP</a>
+            </li>
+          </ul>
+        </div>
+    </nav> 
+  </div>
+  <!------------MODEL login---------->
+  <div class="modal fade" id="mylogin">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login to continue shopping</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form name="myform" method="post" target="_blank"><!----------check here-------->
+            <div class="mb-3 mt-3">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" type="text" name="Uname"  placeholder="User Name">
+            </div>
+            <div class="mb-3">
+              <label for="pwd">Password:</label>
+              <input  class="form-control" type="password" name="pass"  placeholder="password">
+            </div>
+            <div class="mb-3 "> 
+              <input class="btn btn-primary mx-auto d-block" type="button" name="log" id="logButton" value="login" onclick="mylogin ()" >
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!----------MODEL SIGNUP------->
+<div class="modal fade" id="mysignup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">SignUp to continue shopping</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form name="myform1" method="post" ><!----------check here-------->
+            <div class="mb-3 mt-3">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" type="text" name="Uname1"  placeholder="User Name">
+            </div>
+            <div class="mb-3">
+              <label for="pwd">Password:</label>
+              <input  class="form-control" type="password" name="pass1"  placeholder="password">
+            </div>
+            <div class="mb-3">
+              <label for="pwd">Confirm Password:</label>
+              <input  class="form-control" type="password" name="cnpass1"  placeholder="confirm password">
+            </div>
+            <div class="mb-3 "> 
+              <input class="btn btn-primary mx-auto d-block" type="button" name="log" id="logButton" value="SignUp" onclick="mylogin1 ()" target="_blank">
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!----------body---------->
+  <div class="container-fluid" style="height:540px;width: 100vw">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner" style="height:540px;width: 100vw">
+          <div class="carousel-item active">
+            <img src="/fimages/flip1.jpeg" alt="mobile" class="img-fluid mx-auto d-block" style="width:500px;height: 500px">
+          </div>
+          <div class="carousel-item">
+            <img src="/fimages/flip2.jpeg" alt="mobile" class="img-fluid mx-auto d-block" style="width:500px;height: 500px">
+          </div>
+          <div class="carousel-item">
+            <img src="/fimages/flip3.jpeg" alt="mobile" class="img-fluid mx-auto d-block" style="width:500px;height: 500px">
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark"></span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  <!---------footer---------->
+    <div class="container-fluid bg-primary"  >
+        <h2 style="padding: 20px; text-align: center;" >&copy;ALL RIGHTS RESERVED BY FLIPKART</h2>
+    </div> 
+    
+
+
+
+
+    <script src="/Flipkart assignment.js"></script>
+           
 </body>
 </html>
