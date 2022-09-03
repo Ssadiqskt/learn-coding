@@ -113,7 +113,7 @@ console.log(!false)
 //     console.log(Object.keys(names)[i])
 // }
 
-const cars = ["Saab", "Volvo", "BMW"];
-let m = cars[2];
-console.log(m)
-;
+// const cars = ["Saab", "Volvo", "BMW"];
+// let m = cars[2];
+// console.log(m)
+// ;
