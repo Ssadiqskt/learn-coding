@@ -12,17 +12,13 @@
 <body>
 <h1><b>practice!</b></h1>
 
-<pre>
-    
-    
-    
-    
-</pre>
+<p id="demo"></p>
 
 <div onmouseover="this.style.backgroundColor='red'"><span onmouseout = "this.style.backgroundColor='blue'">hello javascript</span></div>
 <button onclick="val()">Click Me</button>
 
-<p id="demo"></p>
+<button onclick="boolean()"></button>
+<span id="demo1" style="color: black; background-color: blueviolet;"></span>
 
 <script>
 function getRndInteger(min, max) {
@@ -32,10 +28,16 @@ function val(){
     document.getElementById('demo').innerHTML = getRndInteger(0,10)
 }
 /*--------boolean---------*/
-document.getElementById("demo").innerHTML = Boolean("sid" / 9);
-document.getElementById("demo").innerHTML = Boolean(10 / 9);
-document.getElementById("demo").innerHTML = Boolean( -10/ 9);
-document.getElementById("demo").innerHTML = Boolean( 10/ -9);
+function boolean(){
+document.getElementById("demo1").innerHTML = "<p>"+Boolean("sid" / 9) +"</p>";
+document.getElementById("demo1").innerHTML = "<p>"+Boolean(10 / 9)+"</p>";
+document.getElementById("demo1").innerHTML = "<p>"+Boolean( -10/ 9)+"</p>";
+document.getElementById("demo1").innerHTML ="<p>"+ Boolean( 10/ -9)+"</p>";
+document.getElementById("demo1").innerHTML ="<p>"+ Boolean(7 < 9)+"</p>";
+document.getElementById("demo1").innerHTML = "<p>"+Boolean(7 < -9)+"</p>";
+document.getElementById("demo1").innerHTML = "<p>"+Boolean(-7 < 9)+"</p>";
+document.getElementById("demo1").innerHTML = "<p>"+Boolean(7 <= 9)+"</p>";
+}
 </script>
 
 
