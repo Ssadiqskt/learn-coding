@@ -37,8 +37,8 @@
             <div class="row">
                 <div class="col-12 col-sm-8 col-md-6 m-auto">
                     <div class="card border-0 shadow-lg" id="div1" >
-                        <button class="btn btn-primary mt-5 mx-5" id="but">LOGIN</button>
-                        <button class="btn btn-warning mt-5 mx-5" id="but">SIGNUP</button>
+                        <button class="btn btn-primary mt-5 mx-5" id="but" onclick="login()">LOGIN</button>
+                        <button class="btn btn-warning mt-5 mx-5" id="but" onclick="reg()">SIGNUP</button>
                         
                            
                     </div>
@@ -47,7 +47,17 @@
         </div>
     </section>   
                         
-        
+        <script>
+
+          function login(){
+            window.location.href="newloginform.html"
+          }
+
+          function reg(){
+            window.location.href="newregform.html"
+          }
+
+        </script>
     
 </body>
 </html>

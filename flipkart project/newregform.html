@@ -15,7 +15,7 @@
 
 <script>
     // <!---------javascript------->
-    function loginfunction(){
+    function loginfunction(event){
     var Remail = document.getElementById('Remail').value;
     var Rpass = document.getElementById('Rpass').value;
     var Mymap =new Map();
@@ -23,7 +23,12 @@
   Mymap.set("ramu@gmail.com", "123@ramu")
   Mymap.set("sadiq@gmail.com", "123@sadiq")
 
-  if (Mymap.has(Remail)) {
+  if (Remail == "") {
+    
+    alert("please enter user email");
+    event.preventDefault;
+
+  }if (Mymap.has(Remail)) {
       window.location.href="newloginform.html"
       alert("username already exist please login");
       
@@ -57,8 +62,8 @@
                             <div class="card-body">
                                 
                                 <form name="form" id="F1" action="">
-                                    <input type="text" name="Remail" id="Remail" value="" class="form-control my-3 py-2" placeholder="UserRemail">
-                                    <input type="text" name="Rpass" id="Rpass" value="" class="form-control my-3 py-2" placeholder="PassWord">
+                                    <input type="text" name="Remail" id="Remail" value="" class="form-control my-3 py-2" placeholder="UserEmail" required>
+                                    <input type="text" name="Rpass" id="Rpass" value="" class="form-control my-3 py-2" placeholder="PassWord" required>
                                     <div class="text-center mt-3">
                                         <button class="btn btn-primary" id="btn" onclick="loginfunction()">LOGIN</button>
                                     </div>

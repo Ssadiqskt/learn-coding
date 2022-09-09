@@ -17,15 +17,21 @@
 
 
  
-  function loginfunction(){
+  function loginfunction(event){
     var email = document.getElementById('email').value;
     var pass = document.getElementById('pass').value;
     var Mymap =new Map();
   Mymap.set("raju@gmail.com","123@raju")
   Mymap.set("ramu@gmail.com", "123@ramu")
   Mymap.set("sadiq@gmail.com", "123@sadiq")
+   
+  if (email == "") {
+    
+    alert("please enter user email");
+    event.preventDefault;
+    
 
-  if (Mymap.has(email) && pass == (Mymap.get(email))) {
+} if (Mymap.has(email) && pass == (Mymap.get(email))) {
       window.location.href="flipkartmain.html"
       alert("username and password is correct ");
       
@@ -76,8 +82,8 @@
                     </div>    
                         <div class="card-body">
                             <form name="form" id="F1" action="">
-                                <input type="text" name="email" id="email" value="" class="form-control my-3 py-2" placeholder="UserEmail">
-                                <input type="text" name="pass" id="pass" value="" class="form-control my-3 py-2" placeholder="PassWord">
+                                <input type="text" name="email" id="email" value="" class="form-control my-3 py-2" placeholder="UserEmail" required>
+                                <input type="text" name="pass" id="pass" value="" class="form-control my-3 py-2" placeholder="PassWord" required>
                                 <div class="text-center mt-3">
                                     <button class="btn btn-primary" id="btn" onclick="loginfunction()">LOGIN</button>
                                 </div>
