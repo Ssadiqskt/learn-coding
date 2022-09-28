@@ -1,0 +1,12 @@
+Hello every one how are you 
+learning node js........>
+the copied thext is here------->
+
+i have copied the text using apendfile
+
+
+
+C:\Program Files\MongoDB\Server\6.0\data\
+
+
+C:\Program Files\MongoDB\Server\6.0\log\

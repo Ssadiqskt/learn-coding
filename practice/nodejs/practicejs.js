@@ -195,13 +195,14 @@
       
     //   let map = new Map(Object.entries(obj));
       
-    let user = {
+    // let user = {
                 
-        Uname: document.getElementById('email').value,
-        Upass: document.getElementById('pass').value
-    }
-      console.log(user)
+    //     Uname: document.getElementById('email').value,
+    //     Upass: document.getElementById('pass').value
+    // }
+    //   console.log(user)
     
+    console.log(100+50);
     
     
     

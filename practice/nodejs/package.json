@@ -1,0 +1,29 @@
+{
+  "name": "learnode",
+  "version": "1.0.0",
+  "description": "learning nodejs",
+  "main": "n1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ssadiqskt/sadiq-nodejs.git"
+  },
+  "keywords": [
+    "learning",
+    "nodejs",
+    "as",
+    "a",
+    "beginner"
+  ],
+  "author": "Shaik Sadiq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ssadiqskt/sadiq-nodejs/issues"
+  },
+  "homepage": "https://github.com/Ssadiqskt/sadiq-nodejs#readme",
+  "dependencies": {
+    "mongodb": "^4.10.0"
+  }
+}

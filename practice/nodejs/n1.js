@@ -34,9 +34,9 @@
 // eventEmitter.emit('zzzzz');
 
 //                                                                                    // node nodejspractise.js
- const { write } = require('fs');
-var http = require('http');
- http.createServer((req,res)=>{
-    res.write('<h1>hello world how are you!</h1>');
-    res.end('Iam ending here');
- }).listen(1122);
+//  const { write } = require('fs');
+// var http = require('http');
+//  http.createServer((req,res)=>{
+//     res.write('<h1>hello world how are you!</h1>');
+//     res.end('Iam ending here');
+//  }).listen(1122);
