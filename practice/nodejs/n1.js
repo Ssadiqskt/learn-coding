@@ -40,3 +40,13 @@
 //     res.write('<h1>hello world how are you!</h1>');
 //     res.end('Iam ending here');
 //  }).listen(1122);
+function fun(A,B){
+    
+    if(B == 0)
+    return B;
+   return fun(B, A%B );
+  
+  
+  }
+var ans = fun(100 , 2000);
+console.log(ans);

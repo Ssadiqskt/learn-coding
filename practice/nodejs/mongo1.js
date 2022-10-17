@@ -7,11 +7,17 @@ async function getData()
 {
     let result = await client.connect();
     db= result.db(databaseName);
-    collection = db.collection('product');
-    let data = await collection.find({}).toArray();
-    console.log(data)
+    return db.collection('product');
+    
+    
 
 
 }
+getData()
+console.log("connected");
 
-getData();
+module.exports = getData;
+
+// jscode----------------
+//    let email = document.getElementById('email').value;
+//    let passw = document.getElementById('pass').value;

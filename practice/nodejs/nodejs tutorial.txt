@@ -1,5 +1,6 @@
 https://github.com/anil-sidhu/node-js
 https://www.youtube.com/watch?v=VrQgmNY96wo
+https://www.youtube.com/watch?v=Ya0H-7A5cE4&list=PLp50dWW_m40UWFSV6PTgYzciZJIxgHy7Q&index=1&t=0s
 
 
     <!------Bootstrap css------------->
@@ -8,3 +9,41 @@ https://www.youtube.com/watch?v=VrQgmNY96wo
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.js"></script>
     <!------Bootstrap icons------------->  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+db.flipkart.find({company: 'Apple'},{'camera':1})
+
+    "model": "Iphone 14",
+    "company": "Apple",
+    "RAM": "6GB",
+    "ROM": "128GB",
+    "Display": "6.1 inch",
+    "camera": "12mp+12mp",
+    "processer": "A15 biomic chip",
+    "Warranty": "1 year"
+
+
+
+    "no of iteams": "1",
+    "price": "₹109900",
+    "discount": "no",
+    "secured packing fee": "₹29",
+    "dilvery charges": "Free",
+    "total amount": "₹109929"
+
+
+    "Wallets": "paytm wallet , Phonepe wallet , mobikwik wallet",
+    "other payments": "Credit card , debit card , netbanking , EMI , UPI , cash on delivery"
+
+
+    model: "Iphone 14",
+    company: "Apple",
+    RAM: "6GB",
+    ROM: "128GB",
+    Display: "6.1 inch",
+    camera: "12mp+12mp",
+    processer: "A15 biomic chip",
+    Warranty: "1 year"
+
+
+
