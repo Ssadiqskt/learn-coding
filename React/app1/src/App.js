@@ -8,8 +8,12 @@ function App(props) {
      setText(cap)
   };
   const letchange = (event) => {
-    setText(event.target.vale)
+    setText(event.target.value)
   };
+
+   const clear = ()=>{
+    setText(" ")
+   }
 
 
   const [text, setText] = useState(" ")
@@ -45,6 +49,7 @@ function App(props) {
       </div>
       <div className="container mb-3 mx-3 my-3">
         <button type="button" className="btn btn-primary my-3" onClick={capsit}>Capitalise</button>
+        <button type="button" className="btn btn-primary my-3 mx-3" onClick={clear}>Clear</button>
       </div>
     </>
   );
