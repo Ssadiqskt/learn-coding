@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Regform from './Regform';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MongoD from './axios';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Regform/>
+    {/* <App /> */}
+    <MongoD/>
   </React.StrictMode>
 );
 
