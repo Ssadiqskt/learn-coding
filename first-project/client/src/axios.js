@@ -1,12 +1,12 @@
 import React, { useEffect, useState , } from 'react';
-import {link , useNavigate} from 'react-router-dom';
-import axios from "axios";
+
+import axios from "./axios";
 import 'bootstrap/dist/css/bootstrap.css';
 import img from "./fliplogo.JPG"
 
 
 export default function MongoD() {
-    const navigate = useNavigate();
+   
 
     const [data, setData] = useState([]);
     useEffect(() => {
@@ -24,11 +24,7 @@ export default function MongoD() {
             })
     }, []);
     console.log(data)
-    const cart = ()=>{
-        navigate('/sam.js')
-
-    };
-
+   
 
     return (
         <>
@@ -74,7 +70,7 @@ export default function MongoD() {
                                         <li><strong>Camera:</strong> {item.camera}</li>
                                         <li><strong>Display :</strong> {item.Display}</li>
                                         <li><strong>Warranty :</strong> {item.Warranty}</li>
-                                        <div className="text-center mt-3"><button className="btn btn-dark" onClick={cart}>BUY NOW</button></div>
+                                        <div className="text-center mt-3"><button className="btn btn-dark" >BUY NOW</button></div>
 
                                     </div>
                                 </div>
